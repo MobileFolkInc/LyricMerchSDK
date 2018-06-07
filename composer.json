@@ -1,0 +1,12 @@
+{
+    "name": "root/esty",
+    "authors": [
+        {
+            "name": "Duc",
+            "email": "ducnguyen12101995@gmail.com"
+        }
+    ],
+    "require": {
+        "php-curl-class/php-curl-class": "^8.0"
+    }
+}
