@@ -11,4 +11,6 @@ $ cd sdk-lyricmerch-api/
 $ composer install
 
 ```
+edit file config.php
+
 now run index.php in your server
