@@ -35,4 +35,41 @@ $data = [
 	]
 ];
 $data = $api->execute('POST',$url,$data);
+
+// demo for api /orders
+
+$url = '/orders';
+$data = [
+	'order_id' => 123455,
+	'shipping' => [
+	    "first_name" => "First name",
+	    "last_name" => "Last name",
+	    "company" => "company",
+	    "country" => "US",
+	    "address_1" => "address_1",
+	    "address_2" => "address_2",
+	    "city" => "city",
+	    "state" => "state",
+	    "postcode" => "100000",
+	    "phone" => 123456789,
+	    "email" => "duc@mobilefolk.com"
+	],
+	'order_data' => [
+		[
+		"design_id" =>  8,
+	      	"product_id" =>  1345,
+	      	"product_size" =>  "M",
+	      	"product_color" =>  "000000",
+	     	"quantity" =>  3,
+		]
+	],
+	'price_data' => [
+	    'subtotal_charged' => 1,
+	    'shipping_charged' => 1,
+	    'tax_charged' => 1,
+	    'currency' => 'USD'
+  	]
+];
+$data = $api->execute('POST',$url,$data);
+
 ?>
