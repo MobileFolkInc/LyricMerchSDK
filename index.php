@@ -24,11 +24,13 @@ $data = [
 	'list_of_order_items' => [
 		[
 			'product_id' => 1261,
-			'quantity' => 2
+			'quantity' => 2,
+			'design_id' => 123
 		],
 		[
 			'product_id' => 1299,
-			'quantity' => 1
+			'quantity' => 1,
+			'design_id' => 123
 		]
 	]
 ];
