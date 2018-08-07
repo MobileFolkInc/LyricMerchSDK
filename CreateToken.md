@@ -2,7 +2,7 @@
   ### For GET method:
   1) token = method + "\n" + API call timestamp + "\n" <br />
   Example : GET Thu, 26 Jul 2018 08:59:45 +0000 (gmdate(\DateTime::RFC2822) in php ) <br /> 
-  2) token = token + base64_encode(REQUEST_URI,url call api) <br />
+  2) token = token + base64_encode(REQUEST_URI,url call api) REQUEST_URI is '/api/v1' <br />
   3) token = base64_encode(hash_hmac('sha256',utf8_encode(token),LYRICMERCH API KEY)) <br />
   ### For POST method:
   1) token = method + "\n" + API call timestamp + "\n" <br />
