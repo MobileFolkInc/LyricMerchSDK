@@ -1,13 +1,13 @@
 API Authentication
 
-For GET method:
+For GET method:<br />
 	1. token = method + "\n" + API call timestamp + "\n"  <br />
 	Example code PHP : $token =  “GET”. "\n" . gmdate(\DateTime::RFC2822) . "\n"; <br />
 	2. token = token + base64_encode(REQUEST_URI,url_call_api) <br />
 	Example code PHP: $token .= base64_encode(REQUEST_URI,”/designs”); <br />
 	3. token = base64_encode(hash_hmac('sha256',utf8_encode(token),LYRICMERCH API KEY))  <br />
 	Example code PHP: $token = base64_encode(hash_hmac('sha256',utf8_encode($token),LYRICMERCH API KEY)); <br />
-For POST method:
+For POST method: <br />
 	1. token = method + "\n" + API call timestamp + "\n"  <br />
 	Example code PHP : $token =  “POST”. "\n" . gmdate(\DateTime::RFC2822) . "\n"; <br />
 	2. Do ksort parameter array which is needed to transfer <br />
