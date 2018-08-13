@@ -39,9 +39,9 @@ PHP code example:  $token .= base64_encode($str); <br />
 5. token = base64_encode(hash_hmac('sha256',utf8_encode(token),LYRICMERCH API KEY));  <br />
 PHP code example: $token = base64_encode(hash_hmac('sha256', utf8_encode($token), LYRICMERCH_API_KEY)); <br />
 
-Note: 
-All API calls need to include:
-LYRICMERCH-USER-ID = user id in LyricMerch 
-LYRICMERCH-TOKEN = token 
-LYRICMERCH-DATE = current timestamp 
-If you use curl setTimeout is 1000 
+Note:  <br />
+All API calls need to include: <br />
+LYRICMERCH-USER-ID = user id in LyricMerch  <br />
+LYRICMERCH-TOKEN = token  <br />
+LYRICMERCH-DATE = current timestamp  <br />
+If you use curl setTimeout is 1000  
