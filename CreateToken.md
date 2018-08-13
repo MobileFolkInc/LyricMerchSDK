@@ -17,14 +17,12 @@
 		- If value is not an array; var =  key + “=” + value  <br /> 
 		- If value is an array; var =  key + “=” + json_encode(value,JSON_NUMERIC_CHECK) <br />
 	PHP code example :   <br />
-	```
 	foreach ($param as $param_name => $param_value) {
 	    if(is_array($param_value)){
 		$param_value = json_encode($param_value,JSON_NUMERIC_CHECK);
 	    }
 	    $temp[] = $param_name . '=' . $param_value;
 	}
-	```
 
 	Then push var to a temporary array (example temp). Finally implode this array with “&” glue <br />
 	Example code in PHP:  $str = implode("&", $temp); <br />
